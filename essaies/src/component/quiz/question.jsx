@@ -1,16 +1,17 @@
+import "./question.css"
 const Question = ({question})=>{
     return(
-        <div>
-            <p>{question}</p>
-            <p>
+        <div className="vuvu">
+            <h1 className="gros">{question}</h1>
+            <span>
                 <input name="ki" id="un" type="radio" />
                 <label htmlFor="un">vrai</label>
                
-            </p>
-            <p>
+            </span>
+            <span className="one">
                 <input name="ki" id="deu" type="radio" />
                 <label  htmlFor="deu">faux</label>
-            </p>
+            </span>
         </div>
     )
 }

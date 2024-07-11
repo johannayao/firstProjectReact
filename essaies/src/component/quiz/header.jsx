@@ -1,9 +1,10 @@
 
 import { useState } from "react";
+import "./header.css"
 const Header = (props)=>{
     return(
         <>
-            <h1>{props.title}</h1>
+            <u className="trais"><h1 className="une">{props.title}</h1></u>
         </>
     )
 }

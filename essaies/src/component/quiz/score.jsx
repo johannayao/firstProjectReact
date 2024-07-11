@@ -1,10 +1,10 @@
-
+import "./score.css"
 const Score = ({qlength,point})=>{
     return(
         
         <div>
-            <p>nombre de question:{qlength}</p>
-            <h3>Score:{point}</h3>
+            <span className="pp">nombre de question:{qlength}</span>
+            <h3 className="hum">Score:{point}</h3>
         </div>
     )
 }
