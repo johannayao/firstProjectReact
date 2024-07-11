@@ -4,6 +4,7 @@ const ChangeColor = ()=>{
     const [color , setColor] = useState('#000000')
     useEffect(()=>{
         console.log("change");
+        console.log(color)
     },[color])
     function genColor(){
         let optout = "#"
@@ -12,7 +13,7 @@ const ChangeColor = ()=>{
             const index = Math.floor(Math.random() *alphabet.length)
             optout += alphabet[index]
         }
-        console.log(optout);
+        // console.log(optout);
         setColor(optout)
     }
         return(
@@ -21,7 +22,5 @@ const ChangeColor = ()=>{
            </div>
         )
 }
-
-
 
 export {ChangeColor}
